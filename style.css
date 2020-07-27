@@ -1,0 +1,305 @@
+    /*imports*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+@import url('/navstyles.css');
+
+/*////////// Element Styles //////////*/
+* {
+  margin:0px;
+  padding:0px;
+}
+body {
+  background-color:	gainsboro;
+  font-family:"Noto Sans TC", sans-serif;
+}
+
+footer {
+  color: #696969;
+  font-style: italic;
+  margin-top:50px;
+  display:block;
+  position: absolute;
+  bottom: 7.5px;
+  left: 0;
+  right: 0;
+}
+
+hr {
+  position:absolute;
+  bottom: 65px;
+  left:0;
+  right:0;
+}
+
+#index-hr {
+  bottom: 85px;
+}
+
+html {
+  position:relative; 
+  min-height: 100%;
+}
+html, body{
+  margin:0;
+  padding:0;
+} 
+
+hr {
+  margin-top:15px;
+}
+
+h1 {
+  font-weight:bold;
+}
+
+table, th, td {
+    width: 50%; 
+    padding: 4px;
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}
+
+tr td:last-child{
+    width:1%;
+    white-space:nowrap;
+}
+
+img {
+  user-select:none;
+}
+
+::-moz-selection {
+  color:#ffffff;
+  background-color:	#7289da;
+}
+
+::selection {
+  color:#ffffff;
+  background-color:	#7289da;
+}
+
+/*////////// Global Classes //////////*/
+.body-container {
+  width:90%;
+  margin-bottom:100px;
+
+}
+
+.body-header {
+  color:#32CD32;
+  color:#7289da;
+  text-align:center;
+}
+
+.body-header-container {
+  width:90%;
+  height:auto;
+  margin-top:150px;
+}
+
+/*Button Styles*/
+.button {
+  font: bold 32px Arial;
+  text-decoration: none;
+  background-color: #4CAf50;
+  background-color: #72da89;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 12px;
+  margin: 7.5px;
+  border: 2px solid black;
+  transition-duration:400ms;
+}
+.button:hover {
+  background-color: white;
+  color: #4CAf50;
+}
+
+
+.bot-logo {
+  width:45px;
+  height:45px;
+  padding:0px;
+}
+
+.codeblock {
+  background-color: rgba(0,0,0,.25);
+  border-radius:5px;
+  margin: 2.5px;
+  padding: 2.5px;
+  font-size: 15px;
+  font-family: "Source Code Pro", "Open Sans", sans-serif;
+}
+/*////////// Staff.html Classes //////////*/
+
+.team-container-table { 
+  width:75%;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.team-staff-table {
+  width:50%;
+}
+
+.team-helper-table {
+  width:50%;
+}
+
+#developer-row td {
+  width:90%;
+}
+
+#admin-row td {
+  width:50%;
+}
+
+#staff-row td {
+  width:33%;
+}
+
+#helper-row td {
+  width:50%;
+}
+  
+
+/*Start of team pfp styles*/
+
+.team-pfp-img {
+  height:175px;
+  width:175px;
+  
+  border-radius:50%;
+  border-width: 5px;
+  border-style: solid;
+  box-shadow: 0px 2px 5px black;
+  text-align: center;
+  
+  margin:15px;
+  padding:0px;
+  
+  transition-duration:200ms;
+}
+
+a .team-pfp-img:hover {
+  border-width: 10px;
+  height: 165px;
+  width:  165px;
+  transition-duration:200ms;
+  
+}
+
+.developer-pfp-img { border-color: #2ECC70; }
+
+.admin-pfp-img { border-color: #6C3A83; }
+
+.staff-pfp-img { border-color: #ff006b; }
+
+.helper-pfp-img { border-color: #F67A0D; }
+
+.webd-pfp-img { border-color: #b48787; }
+
+.partner-pfp-img { border-color:#82FF0A; }
+
+.discord-name { font-weight:bold;}
+
+#vote-embed {
+  margin-top:25px;
+  display:block;
+}
+
+#invite-embed {
+  display:block;
+}
+
+#index-table {
+	width:90%;
+}
+
+#index-table-text {
+  width:60%;
+  text-align:left;
+}
+
+#index-table-text ul li ul li{
+  margin-left:45px;
+}
+
+p.table-title {
+  font-size: 18px;
+}
+
+.command-table {
+  width:80%;
+  background-color:lightgray;
+  border:solid;
+  border-collapse: collapse;
+}
+
+.command-table td {
+  border:solid 2px black;
+}
+
+.command-table th {
+  text-align:center;
+}
+
+.cmd-td {
+  width:15%;
+}
+
+.alias-td {
+  width:25%;
+}
+
+.perm-td {
+  width:15%;
+}
+
+.desc-td {
+  width:45%;
+}
+
+/*////////// Donate.html Styles //////////*/
+#donation-table {
+  text-align:left;
+}
+
+#donation-table td {
+  text-align:left;
+}
+
+#donation-table td ul {
+  margin-left:50px;
+}
+
+.donator-pfp-img { border: 5px solid #fe48ff; }
+
+.paypal-button {
+  border-color: #012169; /*PayPal Blue*/
+}
+
+.patreon-img {
+  border: 5px solid #052d49; /*Patreon Grey*/
+  border-radius:50%;
+}
+
+.donate-img {
+  display: inline-block;
+  
+  height: 100px;
+  width: 100px;
+  
+  padding: 0px;
+  margin:0px;
+}
+
+/*Guide.html Styles*/
+#guide-table {
+  text-align:center;
+  border: 2px solid black;
+}
